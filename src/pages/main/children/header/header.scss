@@ -1,0 +1,34 @@
+@import "src/styles/_inheritance.scss";
+
+.header {
+  max-width: 1920px;
+  width: 100%;
+  align-items: center;
+  height: 75px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  .logotype {
+    gap: 7px;
+  }
+
+  &__nav {
+    @extend %Roboto-font;
+    width: 388px;
+
+    li {
+      margin-left: 3px;
+      margin-right: 3px;
+      padding-left: 25px;
+      padding-right: 25px;
+      display: inline;
+    }
+  }
+
+  &__pc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

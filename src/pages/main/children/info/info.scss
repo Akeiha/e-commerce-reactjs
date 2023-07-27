@@ -1,0 +1,66 @@
+@import "src/styles/_inheritance.scss";
+
+.infoblock {
+  height: 800px;
+  background: #f7f8fa;
+  @extend %centered-content;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    margin-top: 133px;
+  }
+
+  h2 {
+    @extend %Poppins-title-font;
+    text-align: justify;
+    letter-spacing: -0.9px;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    @extend %Poppins-font;
+    color: var(--green);
+    margin-bottom: 38px;
+  }
+
+  &__checklist {
+    margin-bottom: 68px;
+
+    p {
+      @extend %Poppins-font;
+      color: black;
+      margin-bottom: 20px;
+
+      span {
+        margin-left: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__img {
+    width: 540px;
+    height: 377px;
+    background: #fff;
+    margin-top: 214px;
+    background-image: url("../../../../images/png/leaves.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .candle_green {
+      width: 540px;
+      height: 390px;
+      background-image: url("../../../../images/png/candle_green.png");
+      background-repeat: no-repeat;
+    }
+
+    .candle_yellow {
+      width: 594px;
+      height: 446px;
+      background-image: url("../../../../images/png/candle_yellow.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

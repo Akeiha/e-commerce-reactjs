@@ -1,0 +1,50 @@
+.button {
+  border-radius: 4px;
+  background: var(--green);
+  padding: 8px 44px;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20.645px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: 1px solid var(--green);
+  display: inline-flex;
+  gap: 10px;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  path {
+    fill: white;
+  }
+
+  &__big {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: #fff;
+    color: var(--green);
+
+    path {
+      fill: var(--green);
+    }
+  }
+
+  &:disabled {
+    border: 0;
+    background: var(--button-gray);
+    color: var(--black);
+    cursor: not-allowed;
+
+    path {
+      fill: var(--black);
+    }
+  }
+}

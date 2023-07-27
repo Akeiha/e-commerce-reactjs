@@ -1,0 +1,26 @@
+@import "src/styles/_inheritance.scss";
+
+.testimonials {
+  height: 601px;
+  @extend %centered-content;
+  background: rgba(86, 178, 128, 0.1);
+  padding-top: 90px;
+
+  h2 {
+    @extend %Poppins-title-font;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    @extend %Poppins-desc-font;
+    margin-bottom: 27px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    gap: 31px;
+  }
+}

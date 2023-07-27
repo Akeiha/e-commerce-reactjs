@@ -1,0 +1,29 @@
+@import "src/styles/_inheritance.scss";
+
+.products {
+  padding-top: 90px;
+  padding-bottom: 125px;
+  @extend %centered-content;
+
+  &__title {
+    @extend %Poppins-title-font;
+    color: #0b254b;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    @extend %Poppins-desc-font;
+    color: var(--dark-1);
+    height: 35px;
+    margin-bottom: 60px;
+  }
+
+  &__grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}

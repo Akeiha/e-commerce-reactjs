@@ -2,3 +2,8 @@ export { LogoSVG } from "./logo.js";
 export { DropDownSVG } from "./header/dropdown.js";
 export { ProfileSVG } from "./header/profile.js";
 export { CartSVG } from "./header/cart.js";
+export { Seedling } from "./seedling.js";
+export { CardBgSVG } from "./products/card-bg.js";
+export { CheckMarkSVG } from "./checkmark.js";
+export { Stars4 } from "./testimonials/4-stars.js";
+export { Stars5 } from "./testimonials/5-stars.js";

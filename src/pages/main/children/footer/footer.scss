@@ -8,9 +8,7 @@
   padding-top: 60px;
 
   &__limit {
-    max-width: 1920px;
-    margin: 0 auto;
-    width: 100%;
+    @extend %centered-content;
   }
 
   &__separator {
@@ -49,8 +47,6 @@
 
   &__links {
     color: var(--link-gray);
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
     display: flex;
     margin-top: 44px;
 

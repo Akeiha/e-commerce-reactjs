@@ -1,13 +1,19 @@
 @import "src/styles/_inheritance.scss";
 
 .header {
-  max-width: 1920px;
   width: 100%;
-  align-items: center;
   height: 75px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
+  background: #fff;
+  position: fixed;
+  z-index: 2;
+
+  .centered-content {
+    @extend %centered-content;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+  }
 
   .logotype {
     gap: 7px;

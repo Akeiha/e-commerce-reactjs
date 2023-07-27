@@ -1,0 +1,42 @@
+@import "src/styles/_inheritance.scss";
+
+.testimonialsCard {
+  width: 350px;
+  height: 295px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &__photo {
+    background-size: 145%;
+    background-position: center center;
+    margin-bottom: 14px;
+    width: 104px;
+    border-radius: 84px;
+    box-shadow: 0px 3.3600001335144043px 20.160001754760742px 0px
+      rgba(139, 167, 178, 0.16);
+    background-repeat: no-repeat;
+  }
+
+  &__stars {
+    width: 146px;
+    margin-bottom: 22px;
+  }
+
+  &__review {
+    width: 304px;
+    height: 60px;
+    @extend %Poppins-review-font;
+    margin-bottom: 6px;
+    color: #1d293f;
+  }
+
+  &__name {
+    @extend %Helvetica-font;
+    color: #7c8087;
+  }
+}

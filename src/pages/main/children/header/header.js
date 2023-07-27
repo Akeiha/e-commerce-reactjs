@@ -5,21 +5,23 @@ import "./header.scss";
 export function Header() {
   return (
     <header className="header default-container">
-      <LogoSVG />
+      <div className="centered-content">
+        <LogoSVG />
 
-      <nav className="header__nav Roboto-font">
-        <ul>
-          <li>
-            Discovery <DropDownSVG />
-          </li>
-          <li>About</li>
-          <li>Contact us</li>
-        </ul>
-      </nav>
+        <nav className="header__nav Roboto-font">
+          <ul>
+            <li>
+              Discovery <DropDownSVG />
+            </li>
+            <li>About</li>
+            <li>Contact us</li>
+          </ul>
+        </nav>
 
-      <div className="header__pc">
-        <ProfileSVG />
-        <CartSVG />
+        <div className="header__pc">
+          <ProfileSVG />
+          <CartSVG />
+        </div>
       </div>
     </header>
   );

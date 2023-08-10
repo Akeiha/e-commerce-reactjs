@@ -18,6 +18,19 @@
   line-height: 27.6px; /* 138% */
 }
 
+%Roboto-link-font {
+  color: var(--green);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px; /* 142.222% */
+  letter-spacing: -0.9px;
+  text-decoration-line: underline;
+}
+
 %Poppins-font {
   color: #fff;
   font-feature-settings: "clig" off, "liga" off;
@@ -30,7 +43,7 @@
 }
 
 %Poppins-card-font {
-  color: #1d293f;
+  color: var(--black100);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -40,7 +53,7 @@
 }
 
 %Poppins-review-font {
-  color: #1d293f;
+  color: var(--black100);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Poppins", sans-serif;
@@ -74,7 +87,7 @@
 }
 
 %Helvetica-font {
-  color: #1d252c;
+  color: var(--black100);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Helvetica;
@@ -82,6 +95,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25.6px; /* 142.222% */
+}
+
+%Helvetica-desc-font {
+  color: #818181;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.6px; /* 97.5% */
 }
 
 %centered-content {

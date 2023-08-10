@@ -3,7 +3,7 @@ import { Button } from "src/components";
 
 import "./welcome.scss";
 
-export function Welcome() {
+export function Welcome({ scrollToProductBlock }) {
   return (
     <div className="welcome">
       <div className="welcome__body">
@@ -14,7 +14,7 @@ export function Welcome() {
           All handmade with natural soy wax, Candleaf is a companion for all{" "}
           <br /> your pleasure moments{" "}
         </p>
-        <Button>Discovery our collection</Button>
+        <Button onClick={scrollToProductBlock}>Discovery our collection</Button>
       </div>
     </div>
   );

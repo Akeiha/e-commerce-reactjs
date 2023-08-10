@@ -1,0 +1,130 @@
+@import "src/styles/_inheritance.scss";
+
+.productpage {
+  @extend %centered-content;
+  height: 721px;
+  max-width: 1540px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 47px;
+  gap: 30px;
+
+  &__bg {
+    width: 540px;
+    height: 433px;
+    background-color: var(--bg-gray);
+    margin-bottom: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;
+  }
+
+  &__desc {
+    @extend %Poppins-review-font;
+    color: var(--black);
+    width: 540px;
+
+    .free {
+      color: var(--green);
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25.6px;
+      letter-spacing: -0.9px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    @extend %Poppins-title-font;
+    text-align: left;
+    font-size: 26px;
+  }
+
+  &__characteristics {
+    @extend %Helvetica-desc-font;
+    width: 540px;
+    height: 131px;
+    border-radius: 7px;
+    border: 1px solid #e6e6e6;
+    margin-top: 40px;
+    padding-top: 22px;
+    padding-left: 22px;
+
+    p {
+      height: 24px;
+      margin-bottom: 8px;
+    }
+
+    &__name {
+      color: var(--black100);
+    }
+
+    .three {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &__price {
+    height: 59px;
+    text-align: left;
+    @extend %Poppins-title-font;
+    color: var(--green);
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 23px;
+  }
+}
+
+.subscription {
+  width: 350px;
+  height: 158px;
+  margin-bottom: 67px;
+
+  input {
+    margin-right: 20px;
+    --form-control-color: green;
+  }
+
+  &__text {
+    @extend %Roboto-font;
+    text-align: left;
+    padding-top: 18px;
+    padding-left: 18px;
+
+    select {
+      margin-left: 5px;
+      border: 1px solid #e7e7e7;
+      @extend %Roboto-font;
+      font-size: 14px;
+    }
+  }
+
+  &__off {
+    margin-bottom: 18px;
+  }
+
+  &__on {
+    border-radius: 7px;
+    border: 1px solid #e6e6e6;
+    width: 350px;
+    height: 117px;
+  }
+
+  &__desc {
+    margin-top: 7px;
+    width: 320px;
+    height: 51px;
+    @extend %Helvetica-desc-font;
+
+    a {
+      cursor: pointer;
+      color: var(--green);
+    }
+  }
+}

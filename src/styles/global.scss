@@ -6,6 +6,7 @@
   --button-gray: #d6d6d6;
   --dark-1: #5e6e89;
   --dark-blue: #0b254b;
+  --bg-gray: #f7f8fa;
 }
 
 .default-container {
@@ -16,4 +17,16 @@
 .logotype {
   display: flex;
   align-items: center;
+}
+
+.main {
+  margin-top: 75px;
+}
+
+.link {
+  color: black;
+
+  &_active {
+    color: var(--green);
+  }
 }

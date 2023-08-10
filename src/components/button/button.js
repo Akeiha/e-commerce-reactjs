@@ -1,6 +1,6 @@
 import "./button.scss";
 
-export function Button({ children, variant, disabled }) {
+export function Button({ children, variant, disabled, onClick }) {
   let buttonClass = "";
 
   if (variant === "button") {
@@ -12,7 +12,7 @@ export function Button({ children, variant, disabled }) {
   }
 
   return (
-    <button className={buttonClass} disabled={disabled}>
+    <button className={buttonClass} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   );

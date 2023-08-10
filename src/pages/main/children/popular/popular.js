@@ -11,12 +11,13 @@ export function Popular() {
       <p className="popular__desc">Our top selling product that you may like</p>
       <div className="popular__grid">
         {!isEmpty(productsMock) &&
-          productsMock.slice(0, 4).map(({ price, name, cardImg }, i) => {
+          productsMock.slice(0, 4).map(({ price, name, cardImg, id }, i) => {
             return (
               <ProductCard
                 key={i}
                 price={price}
                 name={name}
+                id={id}
                 cardImg={cardImg}
               />
             );

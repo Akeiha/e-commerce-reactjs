@@ -16,7 +16,9 @@
   }
 
   &__img {
-    width: 281px;
+    background-size: contain;
+    background-position-y: -25px;
+    width: 255px;
     position: absolute;
   }
 

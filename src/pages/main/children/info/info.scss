@@ -2,10 +2,15 @@
 
 .infoblock {
   height: 800px;
-  background: #f7f8fa;
+  background-color: var(--bg-gray);
   @extend %centered-content;
-  display: flex;
-  justify-content: space-between;
+
+  &__body {
+    margin: 0 auto;
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__text {
     margin-top: 133px;
